@@ -32,7 +32,7 @@ generate_fstab() {
 						DEVICE_HAS_VENDOR_PARTITION=true
 						;;
 					data)
-						echo "/data				ext4	$a		flags=encryptable=footer;length=-16384" >> recovery.fstab
+						echo "/data				f2fs	$a		flags=encryptable=footer;length=-16384" >> recovery.fstab
 						;;
 					persist)
 						echo "/persist			ext4	$a" >> recovery.fstab
